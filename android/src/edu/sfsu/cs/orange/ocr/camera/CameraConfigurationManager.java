@@ -115,6 +115,7 @@ final class CameraConfigurationManager {
     }
 
     parameters.setPreviewSize(cameraResolution.x, cameraResolution.y);
+    parameters.setPreviewFpsRange(30000, 30000);
     camera.setParameters(parameters);
   }
 
@@ -128,6 +129,7 @@ final class CameraConfigurationManager {
 
   void setTorch(Camera camera, boolean newSetting) {
     Camera.Parameters parameters = camera.getParameters();
+    parameters.setPreviewFpsRange(30000, 30000);
     doSetTorch(parameters, newSetting);
     camera.setParameters(parameters);
     SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);

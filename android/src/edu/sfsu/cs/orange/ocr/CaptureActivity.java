@@ -503,6 +503,16 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 
   @Override
   public boolean onKeyDown(int keyCode, KeyEvent event) {
+	  
+	  /*
+	        if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) {
+	            // user tapped touchpad, do something
+	            return true;
+	        }
+	        ...
+	        return false;
+	    */
+	    
     if (keyCode == KeyEvent.KEYCODE_BACK) {
 
       // First check if we're paused in continuous mode, and if so, just unpause.
@@ -525,7 +535,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
         }
         return true;
       }
-    } else if (keyCode == KeyEvent.KEYCODE_CAMERA) {
+    } else if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.KEYCODE_CAMERA) {
       if (isContinuousModeActive) {
         onShutterButtonPressContinuous();
       } else {
@@ -751,7 +761,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     TextView sourceLanguageTextView = (TextView) findViewById(R.id.source_language_text_view);
     sourceLanguageTextView.setText(sourceLanguageReadable);
     TextView ocrResultTextView = (TextView) findViewById(R.id.ocr_result_text_view);
-    ocrResultTextView.setText(ocrResult.getText());
+    ocrResultTextView.setText(ocrResult.getText() /*+ " [place custom lookup here]"*/);
     // Crudely scale betweeen 22 and 32 -- bigger font for shorter text
     int scaledSize = Math.max(22, 32 - ocrResult.getText().length() / 4);
     ocrResultTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, scaledSize);
@@ -808,7 +818,7 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
     
     if (CONTINUOUS_DISPLAY_RECOGNIZED_TEXT) {
       // Display the recognized text on the screen
-      statusViewTop.setText(ocrResult.getText());
+      statusViewTop.setText(ocrResult.getText() /*+ " [place lookup here]"*/);
       int scaledSize = Math.max(22, 32 - ocrResult.getText().length() / 4);
       statusViewTop.setTextSize(TypedValue.COMPLEX_UNIT_SP, scaledSize);
       statusViewTop.setTextColor(Color.BLACK);
