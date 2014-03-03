@@ -950,6 +950,15 @@ public final class CaptureActivity extends Activity implements
 													 * +
 													 * " [place custom lookup here]"
 													 */);
+		
+        try {
+			readWebpage(mCardScrollView, this, ocrResult.getText(), false);
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
 		// Crudely scale betweeen 22 and 32 -- bigger font for shorter text
 		int scaledSize = Math.max(22, 32 - ocrResult.getText().length() / 4);
 		ocrResultTextView.setTextSize(TypedValue.COMPLEX_UNIT_SP, scaledSize);
@@ -1741,6 +1750,7 @@ public final class CaptureActivity extends Activity implements
 						}
 					}
 					parsedata(act, response_REAL_QUERY, RAW_response_REAL_QUERY);
+					//ocrResultTextView.setText(ocrResult.getText());
 				}
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -1784,6 +1794,11 @@ public final class CaptureActivity extends Activity implements
 		mCards.add(card);
 		mCardScrollView.setSelection(mCards.size() - 1);
 		Log.d(TAG, "QQQ raw: '" + RAW_response_REAL_QUERY + "'");
+		//custom 2
+		TextView ocrResultTextView = (TextView) findViewById(R.id.translation_text_view);
+		ocrResultTextView.setText(RAW_response_REAL_QUERY);
+		
+		
 		if (RAW_response_REAL_QUERY.startsWith("http")) {
 
 			Intent i = new Intent(Intent.ACTION_VIEW);
