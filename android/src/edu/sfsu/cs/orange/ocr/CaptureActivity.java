@@ -976,7 +976,7 @@ public final class CaptureActivity extends Activity implements
 			translationLanguageTextView.setVisibility(View.VISIBLE);
 
 			// Activate/re-activate the indeterminate progress indicator
-			translationTextView.setVisibility(View.GONE);
+			//translationTextView.setVisibility(View.GONE);
 			progressView.setVisibility(View.VISIBLE);
 			setProgressBarVisibility(true);
 
@@ -987,7 +987,7 @@ public final class CaptureActivity extends Activity implements
 		} else {
 			translationLanguageLabelTextView.setVisibility(View.GONE);
 			translationLanguageTextView.setVisibility(View.GONE);
-			translationTextView.setVisibility(View.GONE);
+			//translationTextView.setVisibility(View.GONE);
 			progressView.setVisibility(View.GONE);
 			setProgressBarVisibility(false);
 		}
