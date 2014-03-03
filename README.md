@@ -1,5 +1,21 @@
 #android-ocr
 * * *
+This is a modification to support Google Glass.
+
+See [blog entry] (http://timingblog.brooklynmarathon.com/2014/03/google-glass-and-ocr-optical-character.html)
+
+Many thanks to Robert Theis see https://github.com/rmtheis/android-ocr for an android ocr application and the people at Word Lens for their help!!!
+
+We've added Google Glass support and NYC Taxi License Plate Lookup support to the original OCR android application.
+
+For the source, see https://github.com/fedex1/android-ocr  (open source)  Requires NDK.  
+
+To install the application, download this http://odata-provider-1.compute-engine-1.appspot.com/static/GlassDriveLookup.based.on.OCRTest.apk  and use "adb install"
+
+This a generic application that can translate anything you look at with Google Glass into anything via a Google Drive Lookup or any database lookup.
+
+For example, Look at a New York City Cab License Plate and you will see the owner name.
+
 
 An experimental app for Android that performs optical character recognition (OCR) on images captured using the device camera.
 
