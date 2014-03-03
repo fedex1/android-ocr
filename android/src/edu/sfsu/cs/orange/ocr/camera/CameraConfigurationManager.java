@@ -116,6 +116,8 @@ final class CameraConfigurationManager {
 
     parameters.setPreviewSize(cameraResolution.x, cameraResolution.y);
     parameters.setPreviewFpsRange(30000, 30000);
+    
+    parameters.setZoom(parameters.getMaxZoom());
     camera.setParameters(parameters);
   }
 
