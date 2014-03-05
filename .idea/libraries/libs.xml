@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android/app/libs/tess-two.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/libs/armeabi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/libs/microsoft-translator-java-api-0.6-mod.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/libs/google-api-translate-java-0.98-mod2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/libs/jtar-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/libs/gdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/libs/json_simple-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

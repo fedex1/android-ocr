@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="debug">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/android/app/build/pre-dexed/debug/google-api-translate-java-0.98-mod2-44c82840b4b1b4f052a3b37340efcd88189c7b15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/build/pre-dexed/debug/jtar-1.0.4-e02560f5d1060523a256b4a343931b7a3d24a77e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/build/pre-dexed/debug/armeabi-03005f0785be1f06ca37bfc11c7f0ae222881130.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/build/pre-dexed/debug/microsoft-translator-java-api-0.6-mod-9f21220fe5c89e8c5fd1f84e2dc6136e6d749624.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/build/pre-dexed/debug/gdk-a4b1f45738f6b2497a373d2b133896030cef64a7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/build/pre-dexed/debug/tess-two-775bcde8d72b5e3465d04dc256ac802031a68b52.jar!/" />
+      <root url="jar://$PROJECT_DIR$/android/app/build/pre-dexed/debug/json_simple-1.1-f9445356c089fdb3cfa137463ba995ac3a02dcbe.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
